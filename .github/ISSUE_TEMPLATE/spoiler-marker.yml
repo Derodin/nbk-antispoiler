@@ -1,0 +1,24 @@
+name: Spoiler-Marker senden
+description: Einen kodierten Anti-Spoiler-Export zur Regelpflege übermitteln.
+title: "[Spoiler-Marker] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Bitte den Titel und Begleittext spoilerarm halten.
+        Unter „Meine Spoiler-Marker“ die gewünschten Einträge auswählen und „Export erstellen“ anklicken.
+  - type: textarea
+    id: marker-export
+    attributes:
+      label: Kodierter Export
+      description: Den kopierten NBKAS1.-String einfügen.
+      render: text
+    validations:
+      required: true
+  - type: input
+    id: client
+    attributes:
+      label: WoW-Client und Patch
+      placeholder: z. B. Retail 12.1.5 oder Forever 1.60.1
+    validations:
+      required: true
