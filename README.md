@@ -13,7 +13,8 @@ and the list of hidden players under `/nbk config` in the **Anti-Spoiler** tab.
 2. Extract the release ZIP. The `NerzorsBlacklistKeeper_AntiSpoiler` folder goes directly into `Interface/AddOns`.
 3. Start WoW, enable the add-on and choose **Enable protection** in the introduction.
 
-Version `0.1.0` is based on the in-game verified development build `0.0.11-dev`. Tested clients are Retail 12.1.5, Retail 12.1.7 and Forever 1.60.1. Detection uses local rules and can produce false positives and miss spoilers. Levels and chat types can be configured individually.
+Version `0.1.0` is based on the in-game verified development build `0.0.11-dev`. Tested clients are Retail 12.1.5, Retail 12.1.7 and Forever 1.60.1.
+Detection uses local rules and can produce false positives and miss spoilers. Levels and chat types can be configured individually.
 
 ## Reporting spoilers
 
