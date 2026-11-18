@@ -3,6 +3,8 @@
 NBK Anti-Spoiler adds local spoiler protection for WoW chat to NerzorsBlacklistKeeper.
 The bundled GTA VI profile checks German and English names, keywords, critical plot events and short conversation context.
 
+German, English, French and Spanish rules are active together. The menus follow the WoW client language with English as a fallback.
+
 The add-on offers Light, Medium, High and Context levels, manual and temporary player mutes,
 and spoiler markers with encoded export. You can find the settings
 and the list of hidden players under `/nbk config` in the **Anti-Spoiler** tab.
