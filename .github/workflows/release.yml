@@ -1,0 +1,58 @@
+name: Release to CurseForge
+
+on:
+  push:
+    tags:
+      - '*'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: release-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out tagged version
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Validate version and CurseForge configuration
+        env:
+          CF_API_KEY: ${{ secrets.CF_API_KEY }}
+        run: |
+          python3 .tools/release.py --tag "$GITHUB_REF_NAME"
+          if [ -z "$CF_API_KEY" ]; then
+            echo '::error::Create the repository secret CF_API_KEY in Settings > Secrets and variables > Actions.'
+            exit 1
+          fi
+
+      - name: Install Lua 5.1
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install --yes lua5.1
+
+      - name: Check Lua syntax and run integration tests
+        run: |
+          luac5.1 -p *.lua antispoiler_dev/*.lua tests/*.lua
+          lua5.1 tests/antispoiler-client.lua
+
+      - name: Build release archive
+        uses: BigWigsMods/packager@v2.6.1
+        with:
+          args: -d
+
+      - name: Check release archive contents
+        run: python3 .tools/release.py --tag "$GITHUB_REF_NAME" --archive ".release/NerzorsBlacklistKeeper_AntiSpoiler-${GITHUB_REF_NAME}.zip"
+
+      - name: Publish to CurseForge and GitHub Releases
+        uses: BigWigsMods/packager@v2.6.1
+        with:
+          args: -c
+        env:
+          CF_API_KEY: ${{ secrets.CF_API_KEY }}
+          GITHUB_OAUTH: ${{ secrets.GITHUB_TOKEN }}
