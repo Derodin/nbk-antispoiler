@@ -15,7 +15,7 @@ ignore:
   - .gitattributes
   - .tools
   - tests
-  - docs
+  - screenshots
   - antispoiler_dev
   - README.md
   - CHANGELOG.md
