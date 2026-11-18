@@ -13,7 +13,7 @@ and the list of hidden players under `/nbk config` in the **Anti-Spoiler** tab.
 2. Extract the release ZIP. The `NerzorsBlacklistKeeper_AntiSpoiler` folder goes directly into `Interface/AddOns`.
 3. Start WoW, enable the add-on and choose **Enable protection** in the introduction.
 
-Version `0.1.0` is based on the in-game verified development build `0.0.11-dev`. Tested clients are Retail 12.1.5, Retail 12.1.7 and Forever 1.60.1.
+Tested clients are Retail 12.1.5, Retail 12.1.7 and Forever 1.60.1. With NBK 2.2.0
 Detection uses local rules and can produce false positives and miss spoilers. Levels and chat types can be configured individually.
 
 ## Reporting spoilers
@@ -28,3 +28,8 @@ Right-click a name in chat, then **NBK - ANTI SPOILER → Mark as spoiler …**.
 | `/nbkspoiler muted` | Manage player mutes and transfer them to NBK |
 | `/nbkspoiler mark` | Pick a recently received chat line to mark |
 | `/nbkspoiler markers` | Manage and export saved markers |
+
+## required
+This need NBK (NerzorsBlacklistKeeper)
+- Find Here: [nbk.nerzors.com](https://nbk.nerzors.com/en/)
+- Cursefoge: [cf: NerzrosBlacklistKeeper](https://www.curseforge.com/wow/addons/nerzorsblacklistkeeper)
