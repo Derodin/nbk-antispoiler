@@ -1,11 +1,11 @@
 # 0.1.0
 
-- Erste Veröffentlichung von NBK Anti-Spoiler als Zusatzmodul für NerzorsBlacklistKeeper.
-- GTA-VI-Profil mit Light, Medium, High und Context sowie deutschen und englischen Erkennungsregeln.
-- Lokale Platzhalter für Chatnachrichten in öffentlichen Kanälen, Sagen, Schreien, Gilden-, Gruppen- und Flüsterchat.
-- Context berücksichtigt bis zu acht Nachrichten desselben Gesprächs innerhalb einer Minute.
-- Zwei High-Treffer innerhalb von fünf Minuten lösen eine fünfminütige Spielersperre aus.
-- Manuelle Spielersperren, Übersicht mit Gründen und Restzeit, Freigabe und optionale Übernahme in die NBK-Blacklist.
-- Spoiler-Marker mit bearbeitbaren Ausschnitten und kodiertem Export für GitHub-Issues.
-- Einführung, Beobachtungsmodus und Einstellungen im NBK-Reiter Anti-Spoiler.
-- Auf Retail 12.1.5, Retail 12.1.7 und Forever 1.60.1 im Spiel geprüft. Die Sperrliste wurde zusätzlich auf Retail und Forever bestätigt.
+- Initial release of NBK Anti-Spoiler as an add-on module for NerzorsBlacklistKeeper.
+- GTA-VI profile featuring "Light," "Medium," "High," and "Context" detection levels, with detection rules in both German and English.
+- Local placeholders for chat messages in public channels, /say, /yell, guild chat, group chat, and whispers.
+- "Context" mode accounts for up to eight messages from the same conversation within a one-minute window.
+- Two "High" severity matches within five minutes trigger a five-minute player ban.
+- Manual player bans, including an overview of reasons and remaining duration, options to lift bans, and the ability to optionally add players to the main NBK blacklist.
+- Spoiler markers with editable excerpts and encoded export functionality for GitHub issues.
+- Introduction, observation mode, and settings available within the NBK "Anti-Spoiler" tab.
+- Tested in-game on Retail 12.1.5, Retail 12.1.7, and Forever 1.60.1. The ban list functionality was also verified on both Retail and Forever.
