@@ -1,0 +1,28 @@
+## Interface: 120105, 120107
+## Title: NerzorsBlacklistKeeper - AntiSpoiler
+## Notes: Hides potential GTA VI spoilers in chat. Use /nbkspoiler.
+## Notes-deDE: Blendet moegliche GTA-VI-Spoiler im Chat aus. /nbkspoiler.
+## Notes-frFR: Masque les spoilers potentiels de GTA VI dans le chat. /nbkspoiler.
+## Notes-esES: Oculta posibles spoilers de GTA VI en el chat. /nbkspoiler.
+## Notes-esMX: Oculta posibles spoilers de GTA VI en el chat. /nbkspoiler.
+## Author: DerOdin
+## Version: 0.1.1
+## X-Curse-Project-ID: 1812565
+## Dependencies: NerzorsBlacklistKeeper
+## SavedVariables: NerzorsBlacklistKeeperAntiSpoilerDB
+## Category: Social
+
+Identity.lua
+Locales.lua
+ChatText.lua
+GtaVI.lua
+LanguageRules.lua
+SpoilerRules.lua
+Context.lua
+SenderProtection.lua
+MarkerCodec.lua
+MarkerHistory.lua
+Settings.lua
+MarkerUI.lua
+MutedPlayers.lua
+ClientTest.lua
