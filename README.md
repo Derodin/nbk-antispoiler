@@ -9,9 +9,14 @@ The add-on offers Light, Medium, High and Context levels, manual and temporary p
 and spoiler markers with encoded export. You can find the settings
 and the list of hidden players under `/nbk config` in the **Anti-Spoiler** tab.
 
+## required
+This need NBK (NerzorsBlacklistKeeper)
+- Find Here: [nbk.nerzors.com](https://nbk.nerzors.com/en/)
+- Cursefoge: [cf: NerzrosBlacklistKeeper](https://www.curseforge.com/wow/addons/nerzorsblacklistkeeper)
+
 ## Installation
 
-1. Install and enable NerzorsBlacklistKeeper and its required data module.
+1. Install and enable [NerzrosBlacklistKeeper](https://www.curseforge.com/wow/addons/nerzorsblacklistkeeper) and its required data module.
 2. Extract the release ZIP. The `NerzorsBlacklistKeeper_AntiSpoiler` folder goes directly into `Interface/AddOns`.
 3. Start WoW, enable the add-on and choose **Enable protection** in the introduction.
 
@@ -30,8 +35,3 @@ Right-click a name in chat, then **NBK - ANTI SPOILER → Mark as spoiler …**.
 | `/nbkspoiler muted` | Manage player mutes and transfer them to NBK |
 | `/nbkspoiler mark` | Pick a recently received chat line to mark |
 | `/nbkspoiler markers` | Manage and export saved markers |
-
-## required
-This need NBK (NerzorsBlacklistKeeper)
-- Find Here: [nbk.nerzors.com](https://nbk.nerzors.com/en/)
-- Cursefoge: [cf: NerzrosBlacklistKeeper](https://www.curseforge.com/wow/addons/nerzorsblacklistkeeper)
