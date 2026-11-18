@@ -1,0 +1,12 @@
+.release/
+.env
+.env.*
+!.env.example
+*.wtf
+*.wtf.bak
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+__pycache__/
+*.pyc

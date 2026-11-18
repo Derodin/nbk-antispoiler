@@ -1,0 +1,22 @@
+package-as: NerzorsBlacklistKeeper_AntiSpoiler
+
+required-dependencies:
+  - nerzorsblacklistkeeper
+
+enable-nolib-creation: no
+
+manual-changelog:
+  filename: CHANGELOG.md
+  markup-type: markdown
+
+ignore:
+  - .github
+  - .gitignore
+  - .gitattributes
+  - .tools
+  - tests
+  - docs
+  - antispoiler_dev
+  - README.md
+  - CHANGELOG.md
+  - build-release.ps1
